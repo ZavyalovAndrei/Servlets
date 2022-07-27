@@ -2,14 +2,16 @@ package com.zavialov.service;
 
 import com.zavialov.exception.NotFoundException;
 import com.zavialov.model.Post;
-import com.zavialov.repository.PostRepository;
+import com.zavialov.repository.PostRepositoryImpl;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class PostService {
-    private final PostRepository repository;
+    private final PostRepositoryImpl repository;
 
-    public PostService(PostRepository repository) {
+    public PostService(PostRepositoryImpl repository) {
         this.repository = repository;
     }
 
