@@ -1,6 +1,0 @@
-com\zavialov\model\Post.class
-com\zavialov\repository\PostRepository.class
-com\zavialov\servlet\MainServlet.class
-com\zavialov\exception\NotFoundException.class
-com\zavialov\controller\PostController.class
-com\zavialov\service\PostService.class
