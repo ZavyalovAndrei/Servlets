@@ -1,16 +1,15 @@
+
 package com.zavialov;
 
-import com.zavialov.controller.PostController;
-import com.zavialov.service.PostService;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import com.zavialov.config.JavaConfig;
+import com.zavialov.service.PostService;
 
 public class Main {
     public static void main(String[] args) {
-        final var context = new AnnotationConfigApplicationContext("com.zavialov");
+        final var context = new AnnotationConfigApplicationContext(JavaConfig.class);
         final var controller = context.getBean("postController");
-        final var isSameController = controller == context.getBean(PostController.class);
-        final var service = context.getBean("postService");
-        final var isSameService = service == context.getBean(PostService.class);
-
+        final var service = context.getBean(PostService.class);
+        final var isSame = service == context.getBean("postService");
     }
 }

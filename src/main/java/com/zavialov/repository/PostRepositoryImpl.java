@@ -1,13 +1,11 @@
 package com.zavialov.repository;
 
 import com.zavialov.model.Post;
-import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Optional;
 import java.util.concurrent.CopyOnWriteArrayList;
 
-@Repository
 public class PostRepositoryImpl implements PostRepository {
     List<Post> repository = new CopyOnWriteArrayList<>();
     volatile long postCount = 0;
