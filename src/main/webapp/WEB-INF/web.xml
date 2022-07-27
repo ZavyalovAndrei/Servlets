@@ -3,7 +3,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
-
+    <response-character-encoding>UTF-8</response-character-encoding>
     <servlet>
         <servlet-name>main</servlet-name>
         <servlet-class>com.zavialov.servlet.MainServlet</servlet-class>
@@ -15,3 +15,4 @@
         <url-pattern>/</url-pattern>
     </servlet-mapping>
 </web-app>
+
